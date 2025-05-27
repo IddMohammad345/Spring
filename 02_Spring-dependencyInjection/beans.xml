@@ -7,5 +7,19 @@
        <property name="productName" value="iphone"></property>
        <property name="price" value="150000"></property>
     </bean>
+    <bean id="order1" class="com.flipkart.Order">
+        <property name="emailId"        value="idd@gmail.com"></property>
+        <property name="totalAmount"    value="4000.00"></property>
+        <property name="isOrderSuccess" value="true"></property>
+        <property name="foodType"       value="N"></property>
+        <property name="mobileNumber"   value="9999999999"></property>
+        <property name="foodItemNames">
+            <list>
+            <value>Chicken Biryani</value>
+            <value>Sweet</value>
+            <value>Coke</value>
+            </list>
+        </property>
+    </bean>
 
 </beans>

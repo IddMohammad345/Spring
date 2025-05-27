@@ -1,5 +1,7 @@
 package com.flipkart;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -14,6 +16,19 @@ public class DependencyInjectionMain {
           System.out.println(product.getId());
           System.out.println(product.getProductName());
           System.out.println(product.getPrice());
+          
+          System.out.println("***********  Order Data  *************");
+          Order order = context.getBean(Order.class);
+          System.out.println(order);
+          
+          //using core java 
+          List<String>itemNames=order.getFoodItemNames();
+          for(String names:itemNames) {
+        	  System.out.println(names);
+          }
+          
+          //now using stream api
+          itemNames.forEach(System.out::println);
 	}
 }
    
