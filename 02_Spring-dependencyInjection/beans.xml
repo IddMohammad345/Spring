@@ -2,12 +2,12 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
-    <bean id="product1" class="com.flipkart.Product">
+    <bean id="product1" class="com.setter.Product">
        <property name="id" value="1"></property>
        <property name="productName" value="iphone"></property>
        <property name="price" value="150000"></property>
     </bean>
-    <bean id="order1" class="com.flipkart.Order">
+    <bean id="order1" class="com.setter.Order">
         <property name="emailId"        value="idd@gmail.com"></property>
         <property name="totalAmount"    value="4000.00"></property>
         <property name="isOrderSuccess" value="true"></property>
