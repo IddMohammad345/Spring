@@ -14,6 +14,20 @@ public class Order {
 	private char foodType;
 	private long mobileNumber;
 	
+	
+	
+	
+	public Order(String emailId, float totalAmount, boolean isOrderSuccess, char foodType, long mobileNumber,
+			ArrayList<String> foodItemNames) {
+		super();
+		this.emailId = emailId;
+		this.totalAmount = totalAmount;
+		this.isOrderSuccess = isOrderSuccess;
+		this.foodType = foodType;
+		this.mobileNumber = mobileNumber;
+		this.foodItemNames = foodItemNames;
+	}
+
 	private ArrayList<String>foodItemNames;
 	
 

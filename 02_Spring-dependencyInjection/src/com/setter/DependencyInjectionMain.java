@@ -1,8 +1,9 @@
-package com.flipkart;
+package com.setter;
 
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class DependencyInjectionMain {
@@ -29,6 +30,9 @@ public class DependencyInjectionMain {
           
           //now using stream api
           itemNames.forEach(System.out::println);
+          
+  
+           new ClassPathXmlApplicationContext(context).close(); //closing the spring container
 	}
 }
    
