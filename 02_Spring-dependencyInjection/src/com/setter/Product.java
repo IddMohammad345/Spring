@@ -1,4 +1,4 @@
-package com.flipkart;
+package com.setter;
 //creating pojo class
 
 
