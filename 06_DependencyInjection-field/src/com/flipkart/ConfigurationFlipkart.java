@@ -10,6 +10,6 @@ public class ConfigurationFlipkart {
 	public Product createProduct() {
 		return new Product();
 	}
-	
+	//
 	
 }
